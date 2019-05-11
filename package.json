@@ -4,7 +4,7 @@
   "description": "File manager web based on Koa and Angular.js",
   "main": "index.js",
   "scripts": {
-    "start": "node --harmony ./lib/index.js"
+    "start": "node --harmony ./lib/index.js -p 5000 -d /tmp/files"
   },
   "bin": {
     "node-file-manager": "../node-file-manager/bin/node-file-manager.sh"
@@ -47,5 +47,9 @@
   "bugs": {
     "url": "https://github.com/efeiefei/node-file-manager/issues"
   },
-  "homepage": "https://github.com/efeiefei/node-file-manager#readme"
+  "homepage": "https://github.com/efeiefei/node-file-manager#readme",
+  "engines": {
+    "node": "10.15.2",
+    "npm": "6.4.1"
+  }
 }
